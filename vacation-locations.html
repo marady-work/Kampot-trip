@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kampot Province Vacation Locations</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .locations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .location-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .location-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+            border-color: #667eea;
+        }
+
+        .location-card h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+
+        .location-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .location-card .coordinates {
+            font-size: 0.9em;
+            color: #999;
+            font-style: italic;
+        }
+
+        .icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            border-top: 2px solid #eee;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .locations-grid {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌴 Kampot Province Vacation Guide 🌴</h1>
+            <p>Click on any location to open it in Google Maps</p>
+        </header>
+
+        <div class="locations-grid">
+            
+            <!-- Location 11: ដូងទេរ -->
+            <div class="location-card" onclick="window.open('https://maps.app.goo.gl/Kt66Y9uxMEA7k7iJ7', '_blank')">
+                <div class="icon">🌾</div>
+                <h3>ដូងទេរ (Dong Te)</h3>
+                <p>A local attraction in Kampot Province. Experience authentic Cambodian culture and beautiful rural landscapes.</p>
+                <p class="coordinates">📍 Click to view on Google Maps</p>
+            </div>
+
+            <!-- Location 12: ភូមិថ្មីកំពត -->
+            <div class="location-card" onclick="window.open('https://maps.app.goo.gl/7AptLZSp63eFgqrA9', '_blank')">
+                <div class="icon">🏘️</div>
+                <h3>ភូមិថ្មីកំពត (Phum Thmei Kampot)</h3>
+                <p>A local village area in Kampot Province. Discover the traditional Cambodian village life and community.</p>
+                <p class="coordinates">📍 Click to view on Google Maps</p>
+            </div>
+
+            <!-- Location 13: ជ្រលងវេហា -->
+            <div class="location-card" onclick="window.open('https://maps.app.goo.gl/JxDoA4KkP8KqnZcFA', '_blank')">
+                <div class="icon">🏛️</div>
+                <h3>ជ្រលងវេហា (Chrolong Veha)</h3>
+                <p>A historic and cultural site in Kampot Province. Explore the ancient architecture and spiritual heritage of the area.</p>
+                <p class="coordinates">📍 Click to view on Google Maps</p>
+            </div>
+
+            <!-- Location 14: ឆ្នេរដូង -->
+            <div class="location-card" onclick="window.open('https://maps.app.goo.gl/ZK6xub3GD5CX5Ayg9', '_blank')">
+                <div class="icon">🏖️</div>
+                <h3>ឆ្នេរដូង</h3>
+                <p>A beautiful coastal area in Kampot Province. Enjoy the seaside views and relaxing atmosphere.</p>
+                <p class="coordinates">📍 Click to view on Google Maps</p>
+            </div>
+
+            <!-- Location 15: ឆ្នេរអង្កោល -->
+            <div class="location-card" onclick="window.open('https://maps.app.goo.gl/Lxyc8x3AvJfsbasA9', '_blank')">
+                <div class="icon">🌊</div>
+                <h3>ឆ្នេរអង្កោល (Angkol Beach)</h3>
+                <p>A scenic beach location in Kampot Province. Perfect for relaxation and enjoying the natural coastal beauty.</p>
+                <p class="coordinates">📍 Click to view on Google Maps</p>
+            </div>
+
+            <!-- Location 16: ទំនប់ម្លេច -->
+            <div class="location-card" onclick="window.open('https://maps.app.goo.gl/kQ6huR8owe4hLxEk8', '_blank')">
+                <div class="icon">🏞️</div>
+                <h3>ទំនប់ម្លេច (Mlech Dam)</h3>
+                <p>A scenic dam and reservoir in Kampot Province. Great spot for nature lovers and enjoying the peaceful water views.</p>
+                <p class="coordinates">📍 Click to view on Google Maps</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>🗺️ Click any location to view it on Google Maps</p>
+            <p>Have a wonderful vacation in Kampot Province! 🌟</p>
+        </footer>
+    </div>
+
+    <script>
+        function openMap(lat, lng, placeName) {
+            // Create Google Maps URL with coordinates
+            const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}&query_place_id=${encodeURIComponent(placeName)}`;
+            
+            // Open in a new tab
+            window.open(mapsUrl, '_blank');
+        }
+
+        // Add some interactivity - show a tooltip on hover
+        document.querySelectorAll('.location-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.backgroundColor = '#e8eaf6';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.backgroundColor = '#f8f9fa';
+            });
+        });
+    </script>
+</body>
+</html>
