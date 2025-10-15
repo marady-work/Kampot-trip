@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Explore the best vacation locations in Kampot Province, Cambodia. Interactive guide with Google Maps integration.">
+    <meta name="theme-color" content="#667eea">
     <title>Kampot Province Vacation Locations</title>
     <style>
         * {
@@ -25,6 +27,14 @@
             border-radius: 15px;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
             overflow: hidden;
+        }
+
+        /* Improve touch targets for mobile */
+        @media (hover: none) and (pointer: coarse) {
+            .location-card,
+            .location-item {
+                min-height: 44px; /* iOS minimum touch target */
+            }
         }
 
         header {
@@ -189,13 +199,116 @@
         }
 
         @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            header {
+                padding: 20px 15px;
+            }
+
             header h1 {
-                font-size: 2em;
+                font-size: 1.8em;
+            }
+
+            header p {
+                font-size: 0.95em;
+            }
+
+            .schedule-section {
+                padding: 30px 15px;
+            }
+
+            .schedule-section h2 {
+                font-size: 1.6em;
+                margin-bottom: 20px;
+            }
+
+            .day-card {
+                padding: 20px 15px;
+            }
+
+            .day-number {
+                width: 40px;
+                height: 40px;
+                font-size: 1em;
+                margin-right: 10px;
+            }
+
+            .day-title {
+                font-size: 1.2em;
+            }
+
+            .location-item {
+                flex-direction: column;
+                padding: 12px;
+            }
+
+            .location-item .time {
+                min-width: auto;
+                margin-bottom: 8px;
+                font-size: 0.95em;
+            }
+
+            .location-item .location-name {
+                font-size: 1em;
+            }
+
+            .location-item .description {
+                font-size: 0.85em;
             }
 
             .locations-grid {
                 grid-template-columns: 1fr;
-                padding: 20px;
+                padding: 20px 15px;
+                gap: 15px;
+            }
+
+            .location-card {
+                padding: 18px;
+            }
+
+            .location-card h3 {
+                font-size: 1.2em;
+            }
+
+            .location-card p {
+                font-size: 0.9em;
+            }
+
+            .icon {
+                font-size: 1.8em;
+            }
+
+            footer {
+                padding: 15px;
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            header p {
+                font-size: 0.9em;
+            }
+
+            .schedule-section h2 {
+                font-size: 1.4em;
+            }
+
+            .day-title {
+                font-size: 1.1em;
+            }
+
+            .location-card h3 {
+                font-size: 1.1em;
+            }
+
+            .container {
+                border-radius: 10px;
             }
         }
     </style>
