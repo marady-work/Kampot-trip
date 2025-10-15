@@ -89,6 +89,97 @@
             margin-bottom: 10px;
         }
 
+        .schedule-section {
+            background: #f8f9fa;
+            padding: 40px 30px;
+            border-top: 2px solid #eee;
+        }
+
+        .schedule-section h2 {
+            text-align: center;
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        .schedule-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .day-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #667eea;
+        }
+
+        .day-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .day-number {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-right: 15px;
+        }
+
+        .day-title {
+            color: #333;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .location-item {
+            display: flex;
+            align-items: start;
+            padding: 15px;
+            margin: 10px 0;
+            background: #f8f9fa;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .location-item:hover {
+            background: #e8eaf6;
+            transform: translateX(5px);
+        }
+
+        .location-item .time {
+            font-weight: bold;
+            color: #667eea;
+            min-width: 80px;
+            font-size: 1em;
+        }
+
+        .location-item .details {
+            flex: 1;
+        }
+
+        .location-item .location-name {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .location-item .description {
+            color: #666;
+            font-size: 0.9em;
+        }
+
         footer {
             background: #f8f9fa;
             padding: 20px;
@@ -115,6 +206,62 @@
             <h1>🌴 Kampot Province Vacation Guide 🌴</h1>
             <p>Click on any location to open it in Google Maps</p>
         </header>
+
+        <!-- Trip Schedule Section -->
+        <div class="schedule-section">
+            <h2>📅 3-Day Trip Schedule</h2>
+            <div class="schedule-container">
+                
+                <!-- Day 1 -->
+                <div class="day-card">
+                    <div class="day-header">
+                        <div class="day-number">1</div>
+                        <div class="day-title">Kampot Exploration Day</div>
+                    </div>
+                    
+                    <div class="location-item" onclick="window.open('https://maps.app.goo.gl/Kt66Y9uxMEA7k7iJ7', '_blank')">
+                        <div class="time">9:00 AM</div>
+                        <div class="details">
+                            <div class="location-name">🌴 ដូងទេរ (Dong Te)</div>
+                            <div class="description">Start your day at this local attraction. Experience authentic Cambodian culture and beautiful rural landscapes with coconut palms.</div>
+                        </div>
+                    </div>
+
+                    <div class="location-item" onclick="window.open('https://maps.app.goo.gl/7AptLZSp63eFgqrA9', '_blank')">
+                        <div class="time">2:00 PM</div>
+                        <div class="details">
+                            <div class="location-name">🏘️ ភូមិថ្មីកំពត (Phum Thmei Kampot)</div>
+                            <div class="description">Afternoon visit to discover traditional Cambodian village life and interact with local community.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 2 -->
+                <div class="day-card">
+                    <div class="day-header">
+                        <div class="day-number">2</div>
+                        <div class="day-title">Day 2 - To Be Planned</div>
+                    </div>
+                    
+                    <div style="padding: 20px; text-align: center; color: #999; font-style: italic;">
+                        No activities scheduled yet. Add your preferred locations!
+                    </div>
+                </div>
+
+                <!-- Day 3 -->
+                <div class="day-card">
+                    <div class="day-header">
+                        <div class="day-number">3</div>
+                        <div class="day-title">Day 3 - To Be Planned</div>
+                    </div>
+                    
+                    <div style="padding: 20px; text-align: center; color: #999; font-style: italic;">
+                        No activities scheduled yet. Add your preferred locations!
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
         <div class="locations-grid">
             
@@ -163,6 +310,46 @@
                 <div class="icon">🏞️</div>
                 <h3>ទំនប់ម្លេច (Mlech Dam)</h3>
                 <p>A scenic dam and reservoir in Kampot Province. Great spot for nature lovers and enjoying the peaceful water views.</p>
+                <p class="coordinates">📍 Click to view on Google Maps</p>
+            </div>
+
+            <!-- Location 17: Starbucks Cafe -->
+            <div class="location-card" onclick="window.open('https://maps.app.goo.gl/UqP73C49pgXt2nwDA', '_blank')">
+                <div class="icon">☕</div>
+                <h3>Starbucks Cafe</h3>
+                <p>Enjoy your favorite coffee and snacks. Perfect spot for a break during your trip or morning coffee before exploring.</p>
+                <p class="coordinates">📍 Click to view on Google Maps</p>
+            </div>
+
+            <!-- Location 18: កាហ្វេកំពូលភ្នំ -->
+            <div class="location-card" onclick="window.open('https://maps.app.goo.gl/Jz3hedyhpCGU5YTW8', '_blank')">
+                <div class="icon">🌄</div>
+                <h3>កាហ្វេកំពូលភ្នំ (Kampot Top View)</h3>
+                <p>Spectacular mountain-top cafe with panoramic views of Kampot. Perfect for sunrise/sunset coffee with breathtaking scenery.</p>
+                <p class="coordinates">📍 Click to view on Google Maps</p>
+            </div>
+
+            <!-- Location 19: Veranda Natural Resort -->
+            <div class="location-card" onclick="window.open('https://maps.app.goo.gl/9ujtMANkzyar46SaA', '_blank')">
+                <div class="icon">🏨</div>
+                <h3>Veranda Natural Resort</h3>
+                <p>A tranquil natural resort offering relaxation and comfort. Perfect accommodation surrounded by nature and peaceful atmosphere.</p>
+                <p class="coordinates">📍 Click to view on Google Maps</p>
+            </div>
+
+            <!-- Location 20: កាហ្វេជ្រលងភ្នំ -->
+            <div class="location-card" onclick="window.open('https://maps.app.goo.gl/YiXwVWjZokep5Yxh8', '_blank')">
+                <div class="icon">☕</div>
+                <h3>កាហ្វេជ្រលងភ្នំ (Valley Coffee)</h3>
+                <p>Charming valley cafe with serene mountain views. Perfect spot to enjoy coffee while surrounded by beautiful natural scenery.</p>
+                <p class="coordinates">📍 Click to view on Google Maps</p>
+            </div>
+
+            <!-- Location 21: ភ្នំទូកមាស -->
+            <div class="location-card" onclick="window.open('https://maps.app.goo.gl/WvVNMeoLDp2cjdW87', '_blank')">
+                <div class="icon">⛰️</div>
+                <h3>ភ្នំទូកមាស (Touk Meas Mountain)</h3>
+                <p>Beautiful mountain with stunning views and hiking opportunities. A must-visit destination for nature lovers and adventure seekers.</p>
                 <p class="coordinates">📍 Click to view on Google Maps</p>
             </div>
         </div>
